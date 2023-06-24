@@ -1,0 +1,13 @@
+.padre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bombillo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+}
