@@ -60,6 +60,7 @@ button {
   font-size: 30px; 
   font-weight: 700;
 }
+}
 @media screen and (max-width: 1360px) {
   .phrase-card {
     font-size: 45px;   
