@@ -3,6 +3,7 @@ import Climater from './components/Climate';
 function App() {
  
   
+  
 
   return (
     <>
