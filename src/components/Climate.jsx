@@ -10,26 +10,26 @@ function Climater() {
     longitud =position.coords.longitude;
     console.log(latitud)
     console.log(longitud)   
-    const [country, setCountry] = useState({})
-    useEffect(() =>{
-      axios
-        .get('https://api.openweathermap.org/data/2.5/weather?lat=4.4442585&lon=-75.2128654&appid=69b4289ef8cc5d720923a84d432f017b')
-        .then(resp => {
-          setCountry(resp.data[0])
+    
+    // const [climater, setClimater] = useState({})
+    //   useEffect(() =>{
+    //     axios
+    //       .get('https://api.openweathermap.org/data/2.5/weather?lat=4.4442585&lon=-75.2128654&appid=69b4289ef8cc5d720923a84d432f017b')
+    //       .then(resp => {
+    //         console.log(resp.data)
+    //         // setClimater(resp.data)
+            
+    //       })
           
-        })
-        
-        .catch( error => console.error(error))
-  
-    }, [])
+    //       .catch( error => console.error(error))
+    
+    //   }, [])
 });
 
     return (
       <>
-       <h1>`${longitud}`</h1> 
-       {/* <h1>{country.name?.common}</h1> */}
-       <h2>{country.name?.common}</h2>
-
+       <h1>hola</h1> 
+       <h2>{}</h2>
       </>
     );
   }
