@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import axios from 'axios'
+import { useEffect, useState } from 'react'
 
 function Climater() {
  
@@ -12,7 +13,7 @@ function Climater() {
     const [country, setCountry] = useState({})
     useEffect(() =>{
       axios
-        .get('https://restcountries.com/v3.1/name/colombia')
+        .get('https://api.openweathermap.org/data/2.5/weather?lat=4.4442585&lon=-75.2128654&appid=69b4289ef8cc5d720923a84d432f017b')
         .then(resp => {
           setCountry(resp.data[0])
           
