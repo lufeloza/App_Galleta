@@ -1,6 +1,7 @@
 import './App.css'
 import Climater from './components/Climate';
-import Character from './components/ejemplo';
+import City from './components/ejemplo';
+
 function App() {
  
   
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       <Climater></Climater>
-      <Character></Character>
+      <City></City>
     </>
   );
 }

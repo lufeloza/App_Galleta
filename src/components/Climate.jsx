@@ -3,9 +3,6 @@
 
 function Climater() {
  
-  navigator.geolocation.getCurrentPosition(position => {
-    console.log(position);
-}); 
     
     
     return (
