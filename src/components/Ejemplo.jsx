@@ -27,22 +27,11 @@ const City = () => {
                     })
 
             }, [])
-//    let img ={
-//         "01d":"1.png",
-//         "02d":"2.png",
-//         "03d":"3.png",
-//         "04d":"4.png",
-//         "09d":"5.png",
-//         "10d":"6.png",
-//         "11d":"7.png",
-//         "13d":"8.png",
-//         "50d":"9.png"
-//    }
     let img = `https://openweathermap.org/img/wn/${city.weather?.[0].icon}@2x.png`
     return(
         
         <section className="container">
-         <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+         
          <div className="container-clima">
             <div className="container-clima_temp">                
                 <img className="container-icon" src={`${img}`} alt="" />
