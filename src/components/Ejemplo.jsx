@@ -40,23 +40,30 @@ const City = () => {
 //    }
     let img = `https://openweathermap.org/img/wn/${city.weather?.[0].icon}@2x.png`
     return(
-        <>
-         <div className="container">
-            <div>
-                <h2>{city.name}</h2>
-                <img src={`${img}`} alt="" />
+        
+        <section className="container">
+         <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
+         <div className="container-clima">
+            <div className="container-clima_temp">                
+                <img className="container-icon" src={`${img}`} alt="" />
+                <h2> {Math.round(city.main?.temp)}°C</h2>
             </div>
-            <h2>{city.weather?.[0].description}</h2>
-            <div className="container-temp">
-                <h2> {city.main?.temp}°C</h2>
-                <i className="fa-solid fa-temperature-three-quarters"></i>
+            <div className="container-clima_viento">
+                <h2>Viento:{city.wind?.speed} m/s</h2>
+                <h2>Nubes:{city.clouds?.all}%</h2>
+                <h2>Presión:{city.main?.pressure}</h2>
             </div>
-           
+            
+            <div className="container-city">
+                <h2>{city.name},{city.sys?.country}</h2>
+                <h2>{city.weather?.[0].description}</h2>
+            </div>
+                       
          </div>
             
            
             
-        </>
+        </section>
     )
 }
 
