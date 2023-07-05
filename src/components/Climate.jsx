@@ -5,12 +5,18 @@ function Climater() {
   const [isColor, setIsColor] = useState(true)
     
           const changeColor = ()=>{
-          setIsColor(!isColor)
+            if (isColor ==='false'){
+                document.body.style = `background: radial-gradient(circle, #D5F3FF 0%, black);`
+                setIsColor(!isColor)
+            }else{
+              document.body.style = `background: radial-gradient(circle, #D5F3FF 0%, #51B4E8);`
+              setIsColor(!isColor)
+            }
+          
           }
-    
+    console.log(isColor)
     return (
       <>
-       <body className= {isColor ? '' : 'cm'} />
        <input type="checkbox" id="switch" /><label for="switch" onClick={changeColor}>Toggle</label>
       </>
     );
