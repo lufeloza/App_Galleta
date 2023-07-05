@@ -1,11 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
 body{
      
-    height: 150px;
+    
     background: radial-gradient(circle, #D5F3FF 0%, #51B4E8)
     
 }
 .container{
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +36,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
     font-size: 20px;
 
 }  
@@ -103,3 +108,51 @@ input[type=checkbox]{
     align-items: center;
     height: 100vh;
   }
+  @media screen and (max-width: 1920px) {
+    .container{
+        margin-top: 70px; 
+        font-size: 30px;
+    }      
+}
+ @media screen and (max-width: 1360px) {
+    .container{
+        margin-top: 70px; 
+        font-size: 30px;        
+    }
+}
+@media screen and (max-width: 900px) {
+    .container{
+        margin-top: 50px;       
+        font-size: 25px; 
+    }
+   
+}
+    
+@media screen and (max-width: 768px) {
+    .container{
+        margin-top: 40px;       
+        font-size: 15px; 
+    }
+    .container-clima{
+    
+        min-width: 300px;
+        min-width: 300px;
+               
+    }
+    .container-city{
+       gap: 20px;
+        font-size: 20px;
+    
+    }  
+    .container-icon{
+        height: 300px;
+        min-width: 300px;
+    }
+    
+}
+@media screen and (max-width: 574px) {
+   .container{
+        margin-top: 30px;       
+        font-size: 15px; 
+    }
+}
